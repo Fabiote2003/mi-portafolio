@@ -10,7 +10,7 @@ const About = () => {
       <div className='about-info'>
         <p><span>Fecha de nacimiento:</span> 25 de abril de 2003.</p>
         <p><span>Edad:</span> 19 años.</p> 
-        <p><span>Ciudad:</span> Corrientes, Argentina <img src='../../../src/assets/argentina 1.png' /> .</p>
+        <p><span>Ciudad:</span> Corrientes, Argentina <img src='../../assets/argentina 1.png' /> .</p>
         <p><span>Telefono:</span> +54 9 379 407-1109</p>
         <p><span>Carrera:</span> Licenciatura en Sistemas de Información | UNNE (Universidad Nacional del nordeste) .</p>
         
