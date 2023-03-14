@@ -1,0 +1,46 @@
+h1 {
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    padding: 2rem;
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+h1 span {
+    color: rgb(46, 202, 135);
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-links a {
+    padding: 1rem;
+    font-size: 8rem;
+    color: #f3f3f3;
+}
+
+.contact-links h2 {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #25D366;
+}
+
+.contact-links img {
+    margin-top: 2rem;
+    filter: invert(1);
+    margin-bottom: 5rem;
+}
+
+@media (min-width: 600px) {
+    h1 {
+        font-size: 3rem;
+    }
+}

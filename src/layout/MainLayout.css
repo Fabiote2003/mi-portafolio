@@ -1,0 +1,299 @@
+.container {
+    display: flex;
+}
+
+.sidebar {
+    padding-top: 4rem;
+    width: 20%;
+    background-color: #14213D;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    height: 100vh;
+    transition: all .2s;
+
+}
+
+.sidebar h1 {
+    font-family: 'a Astro Space', sans-serif;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 3rem;
+    padding: 2rem 2.5rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.sidebar h1 span{
+    color: var(--secondary-color);
+}
+
+.sidebar h1::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border-bottom: 5px solid #fff;
+    border-left: 5px solid #fff;
+}
+
+.sidebar h1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    border-top: 5px solid #fff;
+    border-right: 5px solid #fff;
+}
+
+.sidebar nav {
+    margin: 10rem;
+    padding: 2rem;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.sidebar nav .nav-item {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    font-size: 1.9rem;
+    text-decoration: none;
+    color: #FFF;
+    padding: 0.8rem;
+    transition: all .3s;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.sidebar nav .nav-item:hover {
+    color: var(--secondary-color);
+}
+
+.sidebar .logo-secondary {
+    font-family: 'a Astro Space', sans-serif;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 2.5rem;
+    padding: 2rem 2.5rem;
+    position: relative;
+    opacity: 30%;
+    position: absolute;
+    bottom: 3rem;
+}
+
+.sidebar .logo-secondary span {
+    color: #fff;
+}
+
+.sidebar .logo-secondary::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border-bottom: 5px solid #fff;
+    border-left: 5px solid #fff;
+}
+
+.sidebar .logo-secondary::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    border-top: 5px solid #fff;
+    border-right: 5px solid #fff;
+}
+
+
+.main-container {
+    flex: 1 1 0%;
+    min-height: 100vh;
+    background-color: var(--main-bg-color);
+    min-height: 100vh;
+    margin-left: 20%;
+}
+
+.nav-item-active {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    font-size: 1.9rem;
+    text-decoration: none;
+    color: #10B46C;
+    padding: 0.8rem;
+    transition: all .3s;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+
+
+header {
+    display: none;
+    background-color: #14213D;
+}
+
+header i {
+    font-size: 5rem;
+    padding-left: 2rem;
+}
+
+header h1 span{
+    color: var(--secondary-color);
+}
+
+header h1 {
+    font-family: 'a Astro Space', sans-serif;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 3rem;
+    padding: 2rem 2.5rem;
+    position: relative;
+    cursor: pointer;
+    width: 20rem;
+    margin: 0 auto;
+}
+
+
+header h1::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border-bottom: 5px solid #fff;
+    border-left: 5px solid #fff;
+}
+
+header h1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    border-top: 5px solid #fff;
+    border-right: 5px solid #fff;
+}
+
+@media (max-width: 1100px) {
+    .sidebar {
+        left: -100%;
+    }
+    .main-container {
+        margin-left: 0;
+    }
+
+    header {
+        display: flex;
+        padding: 2rem;
+        align-items: center;
+        color: #FFF;
+    }
+
+    .menu-desplegado {
+        position: fixed;
+        left: 0;
+        width: 50%;
+        z-index: 50;
+        transition: all .5s;
+    }
+}
+
+header i {
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 500px) {
+    header {
+        justify-content: space-between;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 2.1rem;
+        text-align: center;
+        padding: 1rem;
+        width: 14rem;
+    }
+
+    header h1::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 30px;
+        height: 30px;
+        border-bottom: 3px solid #fff;
+        border-left: 3px solid #fff;
+    }
+    
+    header h1::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 30px;
+        height: 30px;
+        border-top: 3px solid #fff;
+        border-right: 3px solid #fff;
+    }
+
+    header i {
+        font-size: 4rem;
+    }
+
+    .menu-desplegado {
+        width: 70%;
+    }
+}
+
+
+
+
+
+/*ANIMACION*/
+.fade-in-left {
+	-webkit-animation: fade-in-left 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-left 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+ @-webkit-keyframes fade-in-left {
+    0% {
+      -webkit-transform: translateX(-50px);
+              transform: translateX(-50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in-left {
+    0% {
+      -webkit-transform: translateX(-50px);
+              transform: translateX(-50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
